@@ -26,6 +26,7 @@
 - microcosm
 - mini-signals
 - normalizr *(@npm)*
+- PostCSS
 - rapscallion
 - ~~React~~
 - react-primitives
@@ -41,6 +42,7 @@
   - redux-saga
   - redux-thunk
 - Relay Modern *(+ normalizr)*
+- Rollup
 - sanctuary
 - Slush
 - spectacle
