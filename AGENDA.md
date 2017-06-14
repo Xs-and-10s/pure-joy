@@ -13,6 +13,7 @@
 ##### To explore & evaluate (in alphabetical order, not prioritized)
 - Apollo
 - ~~Babel~~
+- Docker
 - ~~Enzyme~~
 - ~~Jest~~
 - Falcor
@@ -51,6 +52,7 @@
 - transit
 - unexpected
 - unexpected-check
+- Vagrant
 - velocity
 - vx
 - ~~Webpack~~
