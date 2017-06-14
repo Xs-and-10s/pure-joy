@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component barebones snapshot test 1`] = `
+<div>
+  <pre>
+    <code>
+      {}
+    </code>
+  </pre>
+</div>
+`;
+
+exports[`Search component enzyme snapshot test 1`] = `
+<div>
+  <pre>
+    <code>
+      {}
+    </code>
+  </pre>
+</div>
+`;
