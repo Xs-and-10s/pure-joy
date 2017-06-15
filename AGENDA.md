@@ -94,6 +94,7 @@
 
 
 ##### architecture?  *(WIP)*
+...JavaScript...
 - application
 - configuration
 - client
@@ -107,3 +108,32 @@
   - logs?
   - snapshots?
   - ...
+
+
+...Reason...
+- /
+  - **application**/
+  - **architecture**/
+  - **configuration**/
+  - **contract**/
+  - **definition**/
+  - **effect**/
+  - **entry**/
+  - **event**/
+  - **export**/
+  - **import**/
+  - **index.re**
+  - **macro**/
+  - **module**/
+  - **namespace**/
+  - **plugin**/
+  - **property**/
+  - **protocol**/
+  - **specification**/
+  - **ui**/
+    - *animation*/
+    - *layout*/
+    - *structure*/
+    - *styling*/
+    - *widget*/
+  - **x**/
