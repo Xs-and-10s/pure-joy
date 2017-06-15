@@ -37,11 +37,15 @@ An example project that attempts to bring together best libraries, practices, ui
 - PostCSS
 - rapscallion
 - ~~React~~
+- React Component Explorers
+  - carte-blanche
+  - react-cosmos
+  - react-storybook
+  - react-styleguidist
 - react-primitives
 - ~~react-router v4~~
 - react-sketchapp
 - react-slot-fill
-- react-storybook
 - Reason
 - recompose
 - ~~Redux~~
