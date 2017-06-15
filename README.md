@@ -10,10 +10,10 @@ An example project that attempts to bring together best libraries, practices, ui
 
 
 ##### Referenced Repos
-- [create-react-app]()
-- [btholt/complete-intro-to-react]()
-- [@gaearon : Idiomatic Redux]()
-- [create-reason-react-app]()
+- [create-react-app](https://github.com/facebookincubator/create-react-app)
+- [btholt/complete-intro-to-react](https://btholt.github.io/complete-intro-to-react/)
+- [@gaearon : Idiomatic Redux](https://github.com/gaearon/todos)
+- [create-reason-react-app](https://github.com/knowbody/crra)
 - ...
 
 
@@ -26,15 +26,21 @@ An example project that attempts to bring together best libraries, practices, ui
 - Falcor
 - Flow
 - fluture
+- FuseBox
 - GraphQL
 - GSAP
 - Gulp
+- Gun.js
 - Horizon
 - logux
+- Lovefield
 - microcosm
 - mini-signals
+- modux
 - normalizr *(@npm)*
+- Prettier
 - PostCSS
+- PouchDB
 - rapscallion
 - ~~React~~
 - React Component Explorers
@@ -46,6 +52,7 @@ An example project that attempts to bring together best libraries, practices, ui
 - ~~react-router v4~~
 - react-sketchapp
 - react-slot-fill
+- Realm
 - Reason
 - recompose
 - ~~Redux~~
