@@ -1,7 +1,7 @@
 # Pure Joy  *(Work in Progress)*
 > CURRENTLY WORKING ON:
 
-> webpack configuration
+> correct, clean, modular webpack configuration
 
 > ...
 
@@ -11,8 +11,11 @@ An example project that attempts to bring together best libraries, practices, ui
 
 ##### Referenced Repos
 - [create-react-app](https://github.com/facebookincubator/create-react-app)
-- [btholt/complete-intro-to-react](https://btholt.github.io/complete-intro-to-react/)
+- [@btholt : Complete Intro to React](https://btholt.github.io/complete-intro-to-react/)
 - [@gaearon : Idiomatic Redux](https://github.com/gaearon/todos)
+- [@kentcdodds : Webpack 2 Deep Dive](https://github.com/kentcdodds/es6-todomvc)
+- [Survive JS](http://survivejs.com)
+- [Higher Order Components with Functional Patterns using Recompose](https://egghead.io/courses/higher-order-components-with-functional-patterns-using-recompose)
 - [create-reason-react-app](https://github.com/knowbody/crra)
 - ...
 
@@ -21,6 +24,7 @@ An example project that attempts to bring together best libraries, practices, ui
 - Apollo
 - ~~Babel~~
 - Docker
+- ESLint
 - ~~Enzyme~~
 - ~~Jest~~
 - Falcor
@@ -54,7 +58,7 @@ An example project that attempts to bring together best libraries, practices, ui
 - Realm
 - Reason
 - recompose
-- Dataflow Model:
+- *(Dataflow Model)*:
   - ~~Redux~~
   - Actors
   - microcosm
@@ -92,6 +96,7 @@ An example project that attempts to bring together best libraries, practices, ui
 - Rendering Above-the-Fold Fast 
 - Push resources
 - Lazy Loading
+- System.import()
 - RequestIdleCallback() + *what is the best shim?*
 - View Sketching
 - Streaming 
