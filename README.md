@@ -6,6 +6,8 @@
 > more specifically,
 > integrating configuration for Universal Rendering with configuration for Service Worker
 
+> Also, start constructing Higher Order Components for existing Components, working towards a UI Component Library
+
 
 An example project that attempts to bring together best libraries, practices, ui components, and architectures for JS development. Ideally, I'd like to have a starting point for JS development that takes advantage of the best tech out there today, and makes it painless to update configuration to take advantage of the best tech out there tomorrow.
 
