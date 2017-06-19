@@ -23,6 +23,7 @@ An example project that attempts to bring together best libraries, practices, ui
 
 
 ##### To explore & evaluate (in alphabetical order, not prioritized)
+- aphrodite
 - Apollo
 - ~~Babel~~
 - Docker
