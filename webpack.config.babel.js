@@ -15,9 +15,14 @@ export default env => {
   const config = {
     context: resolve("src"),
     devtool: ifProduction("source-map", "eval"),
+    // devServer: {
+    //   hot: true,
+    //   publicPath: '/public/',
+    //   historyApiFallback: true
+    // },
     entry: {
-      app: "./index.js",
-      vendor: ["./index.css", "./App.css", "../public/data.json"]
+      app: ["./ClientApp.jsx"]
+      // vendor: ["./index.css", "./App.css", "../public/data.json"]
     },
     module: {
       rules: [
@@ -28,19 +33,20 @@ export default env => {
         //   test: /\.jsx?$/
         // },
         {
-          loader: "json-loader",
+          include: resolve("src"),
+          use: "json-loader",
           test: /\.json$/
         },
         {
           exclude: /node_modules/,
           include: resolve("src"),
-          loader: "babel-loader",
+          use: "babel-loader",
           test: /\.jsx?$/
         },
         {
-          loader: ExtractTextPlugin.extract({
-            fallbackLoader: "style-loader",
-            loader: "css-loader"
+          use: ExtractTextPlugin.extract({
+            fallback: "style-loader",
+            use: "css-loader"
           }),
           test: /\.css$/
           // use: [
@@ -56,7 +62,7 @@ export default env => {
         {
           exclude: /node_modules/,
           test: /\.svg$/,
-          loader: "svg-loader"
+          use: "svg-loader"
         }
       ]
     },
@@ -83,18 +89,32 @@ export default env => {
       new HtmlWebpackPlugin({
         template: "../public/index.html"
       }),
-      new OfflinePlugin(),
+      // new OfflinePlugin(),
       new webpack.DefinePlugin({
         "process.env": {
           NODE_ENV: ifProduction("production", "development")
         }
       })
-    ])
+    ]),
+    resolve: {
+      extensions: [".js", ".json", ".jsx"]
+    },
+    stats: {
+      colors: true,
+      reasons: true,
+      chunks: true
+    }
   };
 
   if (env.debug) {
     console.log(config);
     debugger; //eslint-disable-line
+  }
+
+  if (process.env.NODE_ENV === "development") {
+    config.entry.app.unshift(
+      "webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000"
+    );
   }
 
   return config;
