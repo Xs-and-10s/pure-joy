@@ -31,7 +31,7 @@
     "react-primitives": "^0.4.2",
     "react-redux": "5.0.5",
     "react-router": "^4.1.1",
-    "react-router-dom": "4.1.1",
+    "react-router-dom": "^4.1.1",
     "recompose": "^0.23.5",
     "redux": "^3.6.0",
     "redux-logger": "^2.6.1",
@@ -150,7 +150,8 @@
     "debug:prod": "npm run debug -- --env.prod",
     "rm": "./node_modules/.bin/rimraf dist",
     "presurge": "npm run build:prod",
-    "surge": "./scripts/surge"
+    "surge": "./scripts/surge",
+    "serve": "NODE_ENV=server node server.js"
   },
   "jest": {
     "collectCoverageFrom": [
