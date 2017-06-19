@@ -2,6 +2,7 @@
 > CURRENTLY WORKING ON:
 
 > correct, clean, modular webpack configuration
+
 > more specifically,
 > integrating configuration for Universal Rendering with configuration for Service Worker
 
@@ -105,6 +106,7 @@ An example project that attempts to bring together best libraries, practices, ui
 - Optimistic Updating
 - DB in Browser
 - Pessimistic Updating
+- Peer-to-peer collaboration
 - WebRTC
 - Hot Module Reloading *(dev mode)*
 - UI Component Library *(with Storybook or similar)*
@@ -124,46 +126,4 @@ An example project that attempts to bring together best libraries, practices, ui
 
 
 ##### architecture?  *(WIP)*
-...JavaScript...
-- application
-- configuration
-- client
-- index.js
-- infrastructure
-- peer
-- server
-- ui
-- ...
-- ???
-  - logs?
-  - snapshots?
-  - ...
-
-
-...Reason...
-- /
-  - **application**/
-  - **architecture**/
-  - **configuration**/
-  - **contract**/
-  - **definition**/
-  - **effect**/
-  - **entry**/
-  - **event**/
-  - **export**/
-  - **import**/
-  - **index.re**
-  - **macro**/
-  - **module**/
-  - **namespace**/
-  - **plugin**/
-  - **property**/
-  - **protocol**/
-  - **specification**/
-  - **ui**/
-    - *animation*/
-    - *layout*/
-    - *structure*/
-    - *styling*/
-    - *widget*/
-  - **x**/
+...
