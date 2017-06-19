@@ -34,7 +34,6 @@ An example project that attempts to bring together best libraries, practices, ui
 - Horizon
 - logux
 - Lovefield
-- microcosm
 - mini-signals
 - modux
 - normalizr *(@npm)*
@@ -55,7 +54,10 @@ An example project that attempts to bring together best libraries, practices, ui
 - Realm
 - Reason
 - recompose
-- ~~Redux~~
+- Dataflow Model:
+  - ~~Redux~~
+  - Actors
+  - microcosm
   - redux-loop
   - redux-observable
   - redux-saga
@@ -82,6 +84,8 @@ An example project that attempts to bring together best libraries, practices, ui
 - Progressive Web App
 - App Shell
 - Accessibility
+- Tree Shaking
+- Chunking
 - Service Worker
 - Caching
 - Prefetching
