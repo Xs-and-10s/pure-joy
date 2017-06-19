@@ -1,8 +1,8 @@
 // @flow
 
-import React from 'react';
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+import React from "react";
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 // $FlowFixMe
 const Wrapper = styled(Link)`
@@ -26,17 +26,14 @@ class ShowCard extends React.Component {
   shouldComponentUpdate() {
     return false;
   }
-  props: {
-    poster: string,
-    title: string,
-    year: string,
-    description: string,
-    imdbID: string
-  };
+
   render() {
     return (
       <Wrapper className="show-card" to={`/details/${this.props.imdbID}`}>
-        <Image alt={`${this.props.title} Show Poster`} src={`/public/img/posters/${this.props.poster}`} />
+        <Image
+          alt={`${this.props.title} Show Poster`}
+          src={`/public/img/posters/${this.props.poster}`}
+        />
         <div>
           <h3>{this.props.title}</h3>
           <h4>({this.props.year})</h4>

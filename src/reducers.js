@@ -1,33 +1,22 @@
-import { ADD_OMDB_DATA, SET_SEARCH_TERM } from "./actions";
+// @flow
 
-const DEFAULT_STATE = {
-  omdbData: {},
-  searchTerm: ""
-};
+import { combineReducers } from 'redux';
+import { SET_SEARCH_TERM, ADD_API_DATA } from './actions';
 
-const rootReducer = (state = DEFAULT_STATE, action) => {
-  switch (action.type) {
-    case ADD_OMDB_DATA:
-      return addOmdbData(state, action);
-    case SET_SEARCH_TERM:
-      return setSearchTerm(state, action);
-    default:
-      return state;
+const searchTerm = (state = '', action: Action) => {
+  if (action.type === SET_SEARCH_TERM) {
+    return action.payload;
   }
+  return state;
 };
 
-function addOmdbData(state, action) {
-  const newOmdbData = {};
-  Object.assign(newOmdbData, state.omdbData, {
-    [action.imdbID]: action.omdbData
-  });
-  const newState = {};
-  Object.assign(newState, state, { omdbData: newOmdbData });
-  return newState;
-}
+const apiData = (state = {}, action: Action) => {
+  if (action.type === ADD_API_DATA) {
+    return Object.assign({}, state, { [action.payload.imdbID]: action.payload });
+  }
+  return state;
+};
 
-function setSearchTerm(state, action) {
-  return Object.assign({}, state, { searchTerm: action.searchTerm });
-}
+const rootReducer = combineReducers({ searchTerm, apiData });
 
 export default rootReducer;

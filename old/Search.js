@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
+import { arrayOf, shape, string } from "prop-types";
+
 import Header from "./Header";
-import ShowCard from "./ShowCard";
+import ShowCard from "./ShowCard.jsx";
 
 class Search extends Component {
   render() {
@@ -28,8 +30,6 @@ class Search extends Component {
     );
   }
 }
-
-const { arrayOf, shape, string } = React.PropTypes;
 
 Search.propTypes = {
   searchTerm: string,

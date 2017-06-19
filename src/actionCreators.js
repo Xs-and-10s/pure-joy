@@ -1,29 +1,25 @@
-import axios from "axios";
+// @flow
 
-import { ADD_OMDB_DATA, SET_SEARCH_TERM } from "./actions";
+import axios from 'axios';
+import { SET_SEARCH_TERM, ADD_API_DATA } from './actions';
 
-export function addOMDBData(imdbID, omdbData) {
-  return {
-    type: ADD_OMDB_DATA,
-    imdbID,
-    omdbData
-  };
+export function setSearchTerm(searchTerm: string) {
+  return { type: SET_SEARCH_TERM, payload: searchTerm };
 }
 
-export function getOMDBDetails(imdbID) {
-  return function(dispatch, getState) {
+export function addAPIData(apiData: Show) {
+  return { type: ADD_API_DATA, payload: apiData };
+}
+
+export function getAPIDetails(imdbID: string) {
+  return (dispatch: Function) => {
     axios
-      .get(`http://www.omdbapi.com?i=${imdbID}`)
+      .get(`http://localhost:3000/${imdbID}`)
       .then(response => {
-        dispatch(addOMDBData(imdbID, response.data));
+        dispatch(addAPIData(response.data));
       })
-      .catch(error => console.error("axios error:", error));
-  };
-}
-
-export function setSearchTerm(searchTerm) {
-  return {
-    type: SET_SEARCH_TERM,
-    searchTerm
+      .catch(error => {
+        console.error('axios error', error); // eslint-disable-line no-console
+      });
   };
 }

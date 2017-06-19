@@ -2,20 +2,21 @@
 > CURRENTLY WORKING ON:
 
 > correct, clean, modular webpack configuration
-
-> ...
-
-
-An example project that attempts to bring together best libraries, practices, ui components, and architectures for JS development. My goal is to have a starting point for JS development that takes advantage of the best tech out there today, and makes it painless to update configuration to take advantage of the best tech out there tomorrow.
+> more specifically,
+> integrating configuration for Universal Rendering with configuration for Service Worker
 
 
-##### Referenced Repos
+An example project that attempts to bring together best libraries, practices, ui components, and architectures for JS development. Ideally, I'd like to have a starting point for JS development that takes advantage of the best tech out there today, and makes it painless to update configuration to take advantage of the best tech out there tomorrow.
+
+
+##### To Reference
 - [create-react-app](https://github.com/facebookincubator/create-react-app)
 - [@btholt : Complete Intro to React](https://btholt.github.io/complete-intro-to-react/)
 - [@gaearon : Idiomatic Redux](https://github.com/gaearon/todos)
 - [@kentcdodds : Webpack 2 Deep Dive](https://github.com/kentcdodds/es6-todomvc)
 - [Survive JS](http://survivejs.com)
 - [Higher Order Components with Functional Patterns using Recompose](https://egghead.io/courses/higher-order-components-with-functional-patterns-using-recompose)
+- [Unicorn Standard](http://unicornstandard.com/)
 - [create-reason-react-app](https://github.com/knowbody/crra)
 - ...
 
@@ -106,18 +107,20 @@ An example project that attempts to bring together best libraries, practices, ui
 - Pessimistic Updating
 - WebRTC
 - Hot Module Reloading *(dev mode)*
-- Component Library *(with Storybook)*
+- UI Component Library *(with Storybook or similar)*
 - Higher Order Components
-  - withAccessors *(getters, setters)*
+  - recompose *(functional)*
+  - withAccessors *(getters)*
   - withActions *(redux-like)*
 - React Native
-- Web Assembly
-- JS-less HTML & CSS
+- works with React Fiber
+- something in Web Assembly
 - Web Workers
+- JS-less HTML & CSS
 - Playground / starter kit for future projects
 - Turn final product into slush.js scaffolds
   - Rollup *(lib mode)*
-  - Webpack *(app mode)*
+  - Webpack | FuseBox *(app mode)*
 
 
 ##### architecture?  *(WIP)*

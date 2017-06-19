@@ -1,6 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 
+import { func, shape, string } from "prop-types";
+
 import Header from "./Header";
 import { getOMDBDetails } from "./actionCreators";
 
@@ -47,8 +49,6 @@ class Details extends React.Component {
     );
   }
 }
-
-const { func, shape, string } = React.PropTypes;
 
 Details.propTypes = {
   dispatch: func,

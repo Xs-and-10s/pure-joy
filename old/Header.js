@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router";
 import { connect } from "react-redux";
 
+import { func, bool, string } from "prop-types";
+
 import { setSearchTerm } from "./actionCreators";
 
 class Header extends React.Component {
@@ -39,8 +41,6 @@ class Header extends React.Component {
     );
   }
 }
-
-const { func, bool, string } = React.PropTypes;
 
 Header.propTypes = {
   dispatch: func,

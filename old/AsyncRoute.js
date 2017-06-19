@@ -1,5 +1,7 @@
 import React from "react";
 
+import { object } from "prop-types";
+
 class AsyncRoute extends React.Component {
   constructor(props) {
     super(props);
@@ -24,8 +26,6 @@ class AsyncRoute extends React.Component {
     }
   }
 }
-
-const { object } = React.PropTypes;
 
 AsyncRoute.propTypes = {
   loadingPromise: object,

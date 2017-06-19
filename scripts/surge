@@ -1,0 +1,4 @@
+# node_modules/.bin/surge token
+# export SURGE_LOGIN=?
+# export SURGE_TOKEN=?
+node_modules/.bin/surge --project dist --domain https://pure-joy.surge.sh

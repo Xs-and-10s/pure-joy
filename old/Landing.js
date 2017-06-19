@@ -1,7 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router";
-const { func, object, string } = React.PropTypes;
+
+import { func, object, string } from "prop-types";
 
 import { setSearchTerm } from "./actionCreators";
 
