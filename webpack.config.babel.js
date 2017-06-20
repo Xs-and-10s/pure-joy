@@ -1,5 +1,4 @@
 const { resolve } = require("path");
-// const resolve = require("path").resolve;
 const webpack = require("webpack");
 const ProgressBarPlugin = require("progress-bar-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");

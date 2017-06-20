@@ -26,6 +26,8 @@ An example project that attempts to bring together best libraries, practices, ui
 - aphrodite
 - Apollo
 - ~~Babel~~
+- Cypress
+- Detox
 - Docker
 - ESLint
 - ~~Enzyme~~
