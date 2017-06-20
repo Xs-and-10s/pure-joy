@@ -18,11 +18,22 @@ An example project that attempts to bring together best libraries, practices, ui
 - [Survive JS](http://survivejs.com)
 - [Higher Order Components with Functional Patterns using Recompose](https://egghead.io/courses/higher-order-components-with-functional-patterns-using-recompose)
 - [Unicorn Standard](http://unicornstandard.com/)
+- [How to Build Animated Microinteractions in React](https://medium.freecodecamp.com/how-to-build-animated-microinteractions-in-react-aab1cb9fe7c8)
+- [React Animation Examples on React.rocks](https://react.rocks/tag/Animation)
 - [create-reason-react-app](https://github.com/knowbody/crra)
 - ...
 
 
 ##### To explore & evaluate (in alphabetical order, not prioritized)
+- Animations
+  - react-animation
+  - react-gsap-enhancer
+  - react-motion
+  - react-move
+  - react-transition-group
+    - anime
+    - GSAP
+  - velocity-react
 - aphrodite
 - Apollo
 - ~~Babel~~
